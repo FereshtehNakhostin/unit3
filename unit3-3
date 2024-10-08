@@ -1,0 +1,17 @@
+int led1 = 12;
+int led1 = 13;
+void setup () {
+    pinMode(led1 , OUTPUT);
+    pinMode(led2 , OUTPUT);
+}
+void loop() {
+
+     delay(5000);
+    digitalWrite(led1 , HIGH);
+    digitalWrite(led2 , LOW);
+    delay(500);
+    digitalWrite(led1 , HIGH);
+    digitalWrite(led2 , LOW);
+
+
+}
