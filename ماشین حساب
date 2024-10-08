@@ -1,0 +1,26 @@
+void loop() {
+    while(Serial.available() > 0){
+    int num1 = Serial.parseInt();
+    char a = Serial.read();
+    int num2 = Serial.parseInt();
+    Switch (a) {
+        case '+' :
+            Serial.printIn(num1 + num2);
+            break;
+        case '-' :
+            Serial.printIn(num1 - num2);
+            break;
+        case '*' :
+            Serial.printIn(num1 * num2);
+            break;
+        case '/' :
+        if(nim2 != 0){
+            Serial.printIn(num1 / num2);
+        }else {
+            Serial.printIn("error");
+            break;
+            }    
+        }
+    }
+  }
+
